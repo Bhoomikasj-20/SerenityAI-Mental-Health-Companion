@@ -1,81 +1,143 @@
-# SerenityAI – AI-Driven Digital Mental Health Platform for Students
+🌿 SerenityAI – AI-Driven Mental Health & Wellness Companion for Students
 
-## 🎯 Project Overview
+SerenityAI is a modern, student-friendly mental health companion designed to provide empathetic AI support, early distress detection, and seamless access to care networks—while keeping user privacy at the core.
 
-SerenityAI is an AI-powered, secure, stigma-free, and culturally inclusive digital platform that provides personalized emotional support, early detection of distress, and easy access to care for students.
+Built with FastAPI, React.js, and Phi-3 (SLM), the system is lightweight, secure, and optimized for real-world college environments.
 
-## 🏗️ System Architecture
+🚀 Key Features
+🧠 AI Emotional Companion (Phi-3 LLM-Powered)
 
-```
+Context-aware, empathetic chat responses
+
+Emotion-based support routing (happy → gratitude, stress/anxiety → relaxation, sadness → journal, crisis → therapist)
+
+Conversation memory using structured prompts + history
+
+Crisis detection through rule-based emotional analyzer
+
+❤️ Three-Stage Response Engine
+
+Mood Awareness
+Rule-based emotion + sentiment detection (happy, sad, anxiety, stress, anger, crisis)
+
+Supportive Response (Phi-3)
+Emotion-aware LLM replies using:
+
+system prompts
+
+sentiment context
+
+conversation history
+
+Personalized Action Routing
+Auto-suggests: journal, gratitude, breathing exercise, therapist link, etc.
+
+🔐 Privacy & Security
+
+Blockchain-based encrypted event logging
+
+No sensitive data stored in plain form
+
+Guest mode available — no login required
+
+🎮 Gamified Wellness Hub
+
+Daily challenges
+
+Relaxation games (Zen Garden, breathing animations, coloring tasks)
+
+🧑‍🤝‍🧑 Peer Groups
+
+Safe groups for discussions
+
+Basic banned-word filtering
+
+Supportive message exchange
+
+
+🏗️ Project Architecture
 SerenityAI/
-├── backend/              # FastAPI backend server
+├── backend/              # FastAPI backend
 │   ├── app/
-│   │   ├── api/         # API routes
-│   │   ├── models/      # Database models
-│   │   ├── services/    # Business logic
-│   │   ├── ai/          # AI/NLP modules
-│   │   ├── blockchain/  # Blockchain integration
-│   │   └── utils/       # Utilities
+│   │   ├── api/          # Chatbot, auth, analytics, wellness, groups
+│   │   ├── models/       # SQLAlchemy models (User, Session, Messages)
+│   │   ├── ai/
+│   │   │   ├── llm_phi3.py         # Phi-3 LLM integration
+│   │   │   ├── emotion_analyzer.py # Rule-based emotion classifier
+│   │   │   └── chatbot.py          # AI conversation engine
+│   │   ├── blockchain/   # Privacy layer
+│   │   ├── services/     # Business logic
+│   │   └── utils/
 │   └── requirements.txt
-├── frontend/            # React.js frontend
+│
+├── frontend/             # React + Tailwind frontend
 │   ├── src/
-│   │   ├── components/  # React components
-│   │   ├── pages/       # Page components
-│   │   ├── services/    # API services
-│   │   └── utils/       # Frontend utilities
+│   │   ├── components/   # UI components (Chat, Modals, Cards)
+│   │   ├── pages/        # Dashboard, Wellness Hub, Gamification
+│   │   ├── services/     # API integration
+│   │   └── utils/
 │   └── package.json
-├── ai_models/           # AI model training and inference
-├── blockchain/          # Blockchain smart contracts
-└── docs/               # Documentation
-```
+└── README.md
 
-## 🚀 Features
+🛠️ Tech Stack
+Frontend
 
-1. **AI Emotional Companion** - 24/7 empathetic chatbot with CBT-based responses
-2. **Blockchain Privacy Layer** - Secure, anonymous data storage
-3. **Predictive Analytics** - Early detection of mental health risks
-4. **Gamified Wellness Hub** - Challenges, points, leaderboards
-5. **Hybrid Care Network** - AI → Peer Mentor → Counselor support
-6. **Peer Groups** - College-based safe chatrooms where authenticated users can create/join groups and share supportive messages (banned-word filtering & moderation placeholder)
-7. **Accessibility (Voice & Read-Aloud)** - Microphone input (SpeechRecognition) and read-aloud (speechSynthesis) with preferences stored in localStorage
+React.js
 
-## 🛠️ Tech Stack
+TailwindCSS
 
-- **Backend**: FastAPI, SQLAlchemy, PostgreSQL
-- **Frontend**: React.js, Socket.io
-- **AI/NLP**: HuggingFace Transformers, Rasa
-- **Blockchain**: Ethereum/Hyperledger (lightweight implementation)
-- **ML**: Scikit-learn, TensorFlow/PyTorch
-- **Real-time**: WebSocket, Socket.io
+Axios (API)
 
-## 📦 Installation
+Socket.io (real-time)
 
-### Backend Setup
+Backend
 
-```bash
+FastAPI
+
+SQLAlchemy ORM
+
+PostgreSQL / SQLite (local)
+
+Uvicorn
+
+AI
+
+Microsoft Phi-3 Mini (Small Language Model)
+
+Custom rule-based Emotion Analyzer (regex)
+
+Structured prompt engineering
+
+Privacy Layer
+
+Lightweight Blockchain-style encrypted logging
+
+Ensures tamper-proof history
+
+📦 Installation
+Backend Setup
 cd backend
 pip install -r requirements.txt
 uvicorn app.main:app --reload --port 8000
-```
 
-### Frontend Setup
-
-```bash
+Frontend Setup
 cd frontend
 npm install
 npm run dev
-```
 
-## 🔐 Environment Variables
 
-Create a `.env` in the `backend/` folder to override defaults if needed. Defaults are set for local dev.
+📌 Why SerenityAI?
 
-Key settings you can set in `.env`:
+AI-powered mental health support
 
-- SECRET_KEY=your_secret
-- DATABASE_URL=sqlite:///./serenityai.db
-- VITE_API_URL=http://localhost:8000/api
+Lightweight & deployable on normal laptops
 
-## 📝 License
+Fast, secure, private
+
+College-friendly design
+
+Focused on early intervention
+
+📝 License
 
 MIT License
