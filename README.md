@@ -1,82 +1,106 @@
 🌿 SerenityAI – AI-Driven Mental Health & Wellness Companion for Students
 
-SerenityAI is a modern, student-friendly mental health companion designed to provide empathetic AI support, early distress detection, and seamless access to care networks—while keeping user privacy at the core.
+SerenityAI is a privacy-focused, empathetic, and student-centric mental health companion designed to support emotional well-being using modern AI.
 
-Built with FastAPI, React.js, and Phi-3 (SLM), the system is lightweight, secure, and optimized for real-world college environments.
+Built using FastAPI + React.js + Phi-3 SLM, SerenityAI is lightweight, deployable on campus systems, and optimized for real-world college mental health needs.
 
 🚀 Key Features
-🧠 AI Emotional Companion (Phi-3 LLM-Powered)
+🧠 AI Emotional Companion (Phi-3 Mini + Emotion Analyzer)
 
 Context-aware, empathetic chat responses
 
-Emotion-based support routing (happy → gratitude, stress/anxiety → relaxation, sadness → journal, crisis → therapist)
+Supports stress, anxiety, sadness, happiness, frustration
 
-Conversation memory using structured prompts + history
+Conversation memory with structured prompts
 
-Crisis detection through rule-based emotional analyzer
+Crisis keyword detection + alert routing
 
 ❤️ Three-Stage Response Engine
+1. Mood Awareness
 
-Mood Awareness
-Rule-based emotion + sentiment detection (happy, sad, anxiety, stress, anger, crisis)
+Rule-based and regex-based sentiment detection:
 
-Supportive Response (Phi-3)
-Emotion-aware LLM replies using:
+Happy
 
-system prompts
+Sad
 
-sentiment context
+Anxiety
 
-conversation history
+Stress
 
-Personalized Action Routing
-Auto-suggests: journal, gratitude, breathing exercise, therapist link, etc.
+Anger
+
+Crisis indicators (self-harm words)
+
+2. Supportive AI Response (Phi-3)
+
+Custom prompt engineering
+
+User emotion injected into system prompt
+
+History-aware responses
+
+3. Action Routing
+
+Auto-suggests:
+
+Journaling
+
+Gratitude prompts
+
+Breathing exercises
+
+Campus counsellor / therapist links
+
+Wellness hub activities
 
 🔐 Privacy & Security
 
-Blockchain-based encrypted event logging
+Blockchain-style encrypted event logging
 
-No sensitive data stored in plain form
+No plain-text sensitive storage
 
-Guest mode available — no login required
+Optional Guest Mode (anonymous usage)
 
 🎮 Gamified Wellness Hub
 
-Daily challenges
+Daily mental well-being challenges
 
-Relaxation games (Zen Garden, breathing animations, coloring tasks)
+Relaxing games (Coloring, Zen Garden, Breathing animations)
 
-🧑‍🤝‍🧑 Peer Groups
+XP points & rewards
 
-Safe groups for discussions
+🧑‍🤝‍🧑 Peer Groups (Safe & Moderated)
 
-Basic banned-word filtering
+Student wellness discussion rooms
 
-Supportive message exchange
+Banned-word filtering
 
+Supportive messaging
 
 🏗️ Project Architecture
 SerenityAI/
-├── backend/              # FastAPI backend
+├── backend/                # FastAPI backend logic
 │   ├── app/
-│   │   ├── api/          # Chatbot, auth, analytics, wellness, groups
-│   │   ├── models/       # SQLAlchemy models (User, Session, Messages)
+│   │   ├── api/            # Chatbot, auth, wellness, groups
+│   │   ├── models/         # SQLAlchemy models
 │   │   ├── ai/
-│   │   │   ├── llm_phi3.py         # Phi-3 LLM integration
-│   │   │   ├── emotion_analyzer.py # Rule-based emotion classifier
-│   │   │   └── chatbot.py          # AI conversation engine
-│   │   ├── blockchain/   # Privacy layer
-│   │   ├── services/     # Business logic
+│   │   │   ├── llm_phi3.py
+│   │   │   ├── emotion_analyzer.py
+│   │   │   └── chatbot.py
+│   │   ├── blockchain/     # Encrypted event logging
+│   │   ├── services/       # Business logic
 │   │   └── utils/
-│   └── requirements.txt
+│   ├── requirements.txt
 │
-├── frontend/             # React + Tailwind frontend
+├── frontend/               # React + Tailwind
 │   ├── src/
-│   │   ├── components/   # UI components (Chat, Modals, Cards)
-│   │   ├── pages/        # Dashboard, Wellness Hub, Gamification
-│   │   ├── services/     # API integration
+│   │   ├── components/     # Chat UI, Cards, Modals
+│   │   ├── pages/          # Dashboard, Wellness Hub
+│   │   ├── services/       # Axios API
 │   │   └── utils/
-│   └── package.json
+│   ├── package.json
+│
 └── README.md
 
 🛠️ Tech Stack
@@ -86,9 +110,9 @@ React.js
 
 TailwindCSS
 
-Axios (API)
+Axios
 
-Socket.io (real-time)
+Socket.io
 
 Backend
 
@@ -96,23 +120,23 @@ FastAPI
 
 SQLAlchemy ORM
 
-PostgreSQL / SQLite (local)
-
 Uvicorn
+
+PostgreSQL / SQLite
 
 AI
 
-Microsoft Phi-3 Mini (Small Language Model)
+Microsoft Phi-3 Mini
 
-Custom rule-based Emotion Analyzer (regex)
+Custom Emotion Analyzer
 
-Structured prompt engineering
+Prompt-engineering engine
 
-Privacy Layer
+Privacy
 
-Lightweight Blockchain-style encrypted logging
+Encrypted log chain
 
-Ensures tamper-proof history
+No sensitive data stored
 
 📦 Installation
 Backend Setup
@@ -125,18 +149,17 @@ cd frontend
 npm install
 npm run dev
 
-
 📌 Why SerenityAI?
 
 AI-powered mental health support
 
-Lightweight & deployable on normal laptops
+Lightweight and deployable anywhere
 
-Fast, secure, private
+Emotion-aware responses
 
-College-friendly design
+Privacy-first design
 
-Focused on early intervention
+Early warning system for distressed students
 
 📝 License
 
