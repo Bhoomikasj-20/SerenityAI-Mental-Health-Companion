@@ -1,0 +1,34 @@
+[
+  {
+    "id": "c1",
+    "name": "Dr. Maya Thompson",
+    "specialization": "Cognitive Behavioral Therapy",
+    "contact": "maya.thompson@example.com",
+    "phone": "+1 (555) 123-4567",
+    "availability": "Mon, Wed, Fri - 9am to 2pm"
+  },
+  {
+    "id": "c2",
+    "name": "James Rivera, LCSW",
+    "specialization": "Stress & Anxiety",
+    "contact": "james.rivera@example.com",
+    "phone": "+1 (555) 987-6543",
+    "availability": "Tue, Thu - 10am to 4pm"
+  },
+  {
+    "id": "c3",
+    "name": "Aisha Khan, PhD",
+    "specialization": "Trauma-informed Care",
+    "contact": "aisha.khan@example.com",
+    "phone": "+1 (555) 222-3344",
+    "availability": "Mon-Fri - 1pm to 6pm"
+  },
+  {
+    "id": "c4",
+    "name": "Liam O'Connor, LPC",
+    "specialization": "Adolescent Therapy",
+    "contact": "liam.oconnor@example.com",
+    "phone": "+1 (555) 444-5566",
+    "availability": "Wed, Sat - 11am to 3pm"
+  }
+]

@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Academic Minds", "description": "Discuss study stress, exams, and college challenges." },
+  { "id": 2, "name": "Connect with Like Minds", "description": "Find supportive peers who share similar interests." },
+  { "id": 3, "name": "Calm & Focus Zone", "description": "A safe place to talk about anxiety and mindfulness." },
+  { "id": 4, "name": "Self-Care Squad", "description": "Share healthy habits, motivation, and positive routines." }
+]
